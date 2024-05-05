@@ -24,6 +24,12 @@ public class FlightBookingSystem implements FlightReservationSystem{
 
     @Override
     public List getAvFlights() {
-        return null;
+        List<Flight> avFlights = new ArrayList<>();
+        for (Flight lot: loty){
+            if (lot.getWolneMiejsca()>=0){
+                avFlights.add(lot);
+            }
+        }
+        return avFlights;
     }
 }

@@ -8,6 +8,6 @@ public class Reservation {
         this.lot = lot;
         this.danePosiadacza = danePosiadacza;
         this.cena = cena;
-        lot.decreseWojneMiejsca();
+        lot.decreseWolneMiejsca();
     }
 }

@@ -3,14 +3,14 @@ public class Flight {
     private String miejsceWylotu;
     private String dataWylotu;
     private int czasTLotu;
-    private int wojneMiejsca;
+    private int wolneMiejsca;
 
-    public Flight(String miejsceDocelowe, String miejsceWylotu, String dataWylotu, int czasTLotu, int wojneMiejsca) {
+    public Flight(String miejsceDocelowe, String miejsceWylotu, String dataWylotu, int czasTLotu, int wolneMiejsca) {
         this.miejsceDocelowe = miejsceDocelowe;
         this.miejsceWylotu = miejsceWylotu;
         this.dataWylotu = dataWylotu;
         this.czasTLotu = czasTLotu;
-        this.wojneMiejsca = wojneMiejsca;
+        this.wolneMiejsca = wolneMiejsca;
     }
 
     public String getMiejsceDocelowe() {
@@ -45,14 +45,14 @@ public class Flight {
         this.czasTLotu = czasTLotu;
     }
 
-    public int getWojneMiejsca() {
-        return wojneMiejsca;
+    public int getWolneMiejsca() {
+        return wolneMiejsca;
     }
 
-    public void setWojneMiejsca(int wojneMiejsca) {
-        this.wojneMiejsca = wojneMiejsca;
+    public void setWolneMiejsca(int wolneMiejsca) {
+        this.wolneMiejsca = wolneMiejsca;
     }
-    public void decreseWojneMiejsca() {
-        this.wojneMiejsca--;
+    public void decreseWolneMiejsca() {
+        this.wolneMiejsca--;
     }
 }
