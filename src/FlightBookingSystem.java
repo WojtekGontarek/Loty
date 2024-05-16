@@ -17,13 +17,13 @@ public class FlightBookingSystem implements FlightReservationSystem{
     }
 
     @Override
-    public Flight searchFlight(Flight lot) {
-        if (loty.contains(lot)) return loty.get(loty.indexOf(lot));
+    public String searchFlight(Flight lot) {
+        if (loty.contains(lot)) return String.format("%s-%s", lot.getMiejsceWylotu(), lot.getMiejsceDocelowe());
         return null;
     }
 
     @Override
-    public List getAvFlights() {
+    public List<Flight> getAvFlights() {
         List<Flight> avFlights = new ArrayList<>();
         for (Flight lot: loty){
             if (lot.getWolneMiejsca()>=0){

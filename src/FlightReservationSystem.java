@@ -7,7 +7,7 @@ public interface FlightReservationSystem {
 
     void cancelReservation(Reservation rezerwacja);
 
-    Flight searchFlight(Flight lot);
+    String searchFlight(Flight lot);
 
     List getAvFlights();
 
